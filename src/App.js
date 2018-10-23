@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/navbar'
 
 let name = "DBS React DEMO"
 let frameworks = [{
@@ -27,6 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar name={name} textColor={"white-text"} />
         <div className="d-flex flex-row">
           <div className="w-25"></div>
           <div className="w-75"></div>
